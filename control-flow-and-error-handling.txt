@@ -26,3 +26,10 @@ while (x < 10) {
 }
 Here, { x++; } is the block statement.
 
+Important: JavaScript before ECMAScript2015 (6th edition) does not have block scope!  
+In older JavaScript, variables introduced within a block are scoped to the containing 
+function or script, and the effects of setting them persist beyond the block itself. 
+In other words, block statements do not define a scope.
+
+"Standalone" blocks in JavaScript can produce completely different results from what 
+they would produce in C or Java.
