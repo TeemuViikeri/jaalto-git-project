@@ -33,3 +33,10 @@ In other words, block statements do not define a scope.
 
 "Standalone" blocks in JavaScript can produce completely different results from what 
 they would produce in C or Java.
+For example:
+
+var x = 1;
+{
+  var x = 2;
+}
+console.log(x); // outputs 2
