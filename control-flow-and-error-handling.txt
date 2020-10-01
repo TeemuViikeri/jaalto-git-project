@@ -7,3 +7,22 @@ The semicolon (;) character is used to separate statements in JavaScript code.
 
 Any JavaScript expression is also a statement. See Expressions and operators for complete 
 information about expressions.
+
+Block statement
+The most basic statement is a block statement, which is used to group statements. 
+The block is delimited by a pair of curly brackets:
+
+{
+  statement_1;
+  statement_2;
+  ⋮
+  statement_n;
+}
+Example
+Block statements are commonly used with control flow statements (if, for, while).
+
+while (x < 10) {
+  x++;
+}
+Here, { x++; } is the block statement.
+
