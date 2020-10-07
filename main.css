@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.main-header {
+  border-bottom: 1px solid lightgray;
+}
+
 .main-header h1 {
   text-align: center;
+  padding: 24px 0;
 }
