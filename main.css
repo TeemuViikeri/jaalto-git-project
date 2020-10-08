@@ -18,6 +18,12 @@
   border-bottom: 1px solid lightgray;
 }
 
+.teemu-area h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
 .teemu-area p {
   padding-top: 8px;
+  font-family: 'Roboto', sans-serif;
 }
