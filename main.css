@@ -17,3 +17,7 @@
   padding: 16px 18px;
   border-bottom: 1px solid lightgray;
 }
+
+.teemu-area p {
+  padding-top: 8px;
+}
