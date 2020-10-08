@@ -27,3 +27,8 @@ function power () {
   var number2 = document.getElementById("number2").value
   document.getElementById("result").innerHTML = "result: " + (Math.pow(number, number2))
 }
+
+function squareRoot () {
+  var number = document.getElementById("number").value
+  document.getElementById("result").innerHTML = "result: " + (Math.sqrt(number))
+}
