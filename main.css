@@ -16,11 +16,12 @@
 .teemu-area {
   padding: 16px 18px;
   border-bottom: 1px solid lightgray;
+  color: white;
+  background: #444;
 }
 
 .teemu-area h2 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 100;
 }
 
 .teemu-area p {
