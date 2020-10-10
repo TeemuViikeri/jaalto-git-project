@@ -5,3 +5,8 @@
 .calculator > div {
   margin: 10px;
 }
+
+.calculator {
+  width: 200px;
+  background-color: aqua;
+}
