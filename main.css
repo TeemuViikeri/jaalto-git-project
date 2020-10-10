@@ -1,3 +1,15 @@
+.calculator input {
+  width: 70px;
+}
+
+.calculator > div {
+  margin: 10px;
+}
+
+.calculator {
+  width: 200px;
+  background-color: aqua;
+
 * {
   padding: 0;
   margin: 0;
