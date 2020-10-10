@@ -1,3 +1,7 @@
 .calculator input {
   width: 70px;
 }
+
+.calculator > div {
+  margin: 10px;
+}
