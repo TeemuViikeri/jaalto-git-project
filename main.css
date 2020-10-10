@@ -9,4 +9,39 @@
 .calculator {
   width: 200px;
   background-color: aqua;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  border-bottom: 1px solid lightgray;
+}
+
+.main-header h1 {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.teemu-area {
+  padding: 16px 18px;
+  border-bottom: 1px solid lightgray;
+  color: white;
+  background: #444;
+}
+
+.teemu-area h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.teemu-area p {
+  padding-top: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.teemu-area p::first-letter {
+  font-size: 24px;
+  font-weight: bold;
 }
