@@ -51,6 +51,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.calculator h2 {
+  font-size: 28px;
+}
+
 .calculator input {
   width: 70px;
 }
