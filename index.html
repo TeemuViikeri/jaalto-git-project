@@ -3,7 +3,7 @@
 <head>
     <title>Git project</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,16 +19,16 @@
     <div class="calculator">
         <h2>Calculator</h2>
         <div id="calculatorInputs">
-          <input type="number" id="number" placeholder="number">
-          <input type="number" id="number2" placeholder="number">
+          <input class="calc-input" type="number" id="number" placeholder="number">
+          <input class="calc-input" type="number" id="number2" placeholder="number">
         </div>
         <div id="calculatorButtons">
-          <button class="btn" type="button" id="sum" onclick="sum()">+</button>
-          <button class="btn" type="button" id="minus" onclick="minus()">-</button>
-          <button class="btn" type="button" id="multiply" onclick="multiply()">*</button>
-          <button class="btn" type="button" id="divide" onclick="divide()">/</button>
-          <button class="btn" type="button" id="power" onclick="power()">^</button>
-          <button class="btn" type="button" id="squareRoot" onclick="squareRoot()">&Sqrt;</button>
+          <button class="calc-btn" type="button" id="sum" onclick="sum()">+</button>
+          <button class="calc-btn" type="button" id="minus" onclick="minus()">-</button>
+          <button class="calc-btn" type="button" id="multiply" onclick="multiply()">*</button>
+          <button class="calc-btn" type="button" id="divide" onclick="divide()">/</button>
+          <button class="calc-btn" type="button" id="power" onclick="power()">^</button>
+          <button class="calc-btn" type="button" id="squareRoot" onclick="squareRoot()">&Sqrt;</button>
         </div> 
         <p id="result"></p>
     </div>
