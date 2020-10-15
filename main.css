@@ -42,6 +42,13 @@
 
 /* CALCULATOR */
 
+.calculator {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  background-color: aqua;
+}
+
 .calculator h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -53,9 +60,4 @@
 
 .calculator > div {
   margin: 10px;
-}
-
-.calculator {
-  width: 200px;
-  background-color: aqua;
 }
