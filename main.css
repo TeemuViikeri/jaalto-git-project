@@ -18,6 +18,12 @@
   padding: 24px 0;
 }
 
+#clock {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: -10px 0 10px;
+}
+
 /* TEEMU'S DEV AREA */
 
 .teemu-area {
