@@ -47,11 +47,7 @@
   padding: 20px;
   width: 100%;
   background-color: aqua;
-}
-
-.calculator h1 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .calculator input {
@@ -60,4 +56,9 @@
 
 .calculator > div {
   margin: 10px;
+}
+
+#result {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
