@@ -32,3 +32,22 @@ function squareRoot () {
   var number = document.getElementById("number").value
   document.getElementById("result").innerHTML = "result: " + (Math.sqrt(number))
 }
+
+function showTime() {
+  var clock = document.getElementById('clock');
+
+  var currentTime = new Date();
+
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+
+  if (seconds <= 10) {
+    seconds = '0' + seconds;
+  }
+
+  var clockTime = `${hours}:${minutes}:${seconds}`
+  clock.innerText = clockTime;
+}
+
+setInterval(showTime, 1000)
