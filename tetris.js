@@ -49,4 +49,8 @@ const player = {
   matrix: matrix,
 }
 
+document.addEventListener('keydown', event => {
+  console.log('lol')
+}) 
+
 update();
