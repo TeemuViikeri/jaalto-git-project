@@ -50,7 +50,9 @@ const player = {
 }
 
 document.addEventListener('keydown', event => {
-  console.log('lol')
+  if (event.keyCode === 37) {
+    player.pos.x--;
+  }
 }) 
 
 update();
