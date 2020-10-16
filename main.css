@@ -33,19 +33,19 @@
   background: #444;
 }
 
+/* Heading */
 .teemu-area h2 {
   font-family: 'Open Sans', sans-serif;
 }
 
-.teemu-area p {
-  padding-top: 8px;
-  font-family: 'Roboto', sans-serif;
+/* Quotes */
+.quote-btn {
+  background-color: grey;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
 }
 
-.teemu-area p::first-letter {
-  font-size: 24px;
-  font-weight: bold;
-}
 
 /* CALCULATOR */
 
