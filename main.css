@@ -63,6 +63,11 @@
   font-weight: 400;
 }
 
+.quote-author {
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
 
 /* CALCULATOR */
 
