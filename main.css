@@ -66,8 +66,7 @@
 }
 
 .quote-text {
-  padding-top: 16px;
-  padding-bottom: 4px;
+  padding: 16px 0;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
