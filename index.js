@@ -125,11 +125,9 @@ function getQuotes () {
   ];
 
   const btn = document.getElementById("btn");
-  console.log(btn);
 
   btn.addEventListener("click", () => {
     let random = Math.floor(Math.random() * quotes.length);
-    console.log(random);
 
     document.getElementById("quote").textContent = quotes[random].quote;
     document.querySelector(".quote-author").textContent = quotes[random].author;
