@@ -46,6 +46,13 @@
   padding: 24px 0;
 }
 
+.quote-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  padding-bottom: 16px;
+}
+
 .quote-btn {
   background-color: grey;
   color: white;
