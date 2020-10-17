@@ -49,8 +49,8 @@
 .quote-heading {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 28px;
-  padding-bottom: 16px;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
 }
 
 .quote-btn {
@@ -93,6 +93,17 @@
   padding: 24px 0;
 }
 
+.timeline-h-container h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.h-arrow {
+  position: relative;
+  bottom: 6px;
+}
 
 /* CALCULATOR */
 
