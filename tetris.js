@@ -35,6 +35,14 @@ function playerDrop() {
 let dropCounter = 0;
 let dropInterval = 1000;
 
+function createMatrix(w, h) {
+  const matrix = [];
+  while (h--) {
+    atrix.push(new Array(w).fill(0))
+  }
+  return matrix;
+}
+
 let lastTime = 0;
 function update(time = 0) {
   const deltaTime = time - lastTime
@@ -66,3 +74,4 @@ document.addEventListener('keydown', event => {
 }) 
 
 update();
+createMatrix(20, 5)
