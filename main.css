@@ -144,6 +144,15 @@ time {
   padding-bottom: 0.5rem;
 }
 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 3.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
 /* CALCULATOR */
 
 .calculator {
