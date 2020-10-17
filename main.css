@@ -157,6 +157,7 @@ time {
 }
 
 .timeline ul li:nth-child(odd) div {
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   left: 45px;
 }
 
@@ -169,6 +170,7 @@ time {
 
 .timeline ul li:nth-child(even) div {
   left: -440px;
+  box-shadow: -4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .timeline ul li:nth-child(even) div::before {
