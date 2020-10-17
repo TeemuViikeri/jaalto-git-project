@@ -85,6 +85,15 @@
   font-weight: 400;
 }
 
+/* Timeline */
+.timeline {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+
 /* CALCULATOR */
 
 .calculator {
