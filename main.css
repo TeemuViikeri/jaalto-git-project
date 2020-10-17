@@ -138,6 +138,12 @@
   background: grey;
 }
 
+time {
+  display: block;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
 /* CALCULATOR */
 
 .calculator {
