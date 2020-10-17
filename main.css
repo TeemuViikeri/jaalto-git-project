@@ -153,6 +153,16 @@ time {
   border-style: solid;
 }
 
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -16.5px;
+  border-width: 8px 16px 8px 0px;
+  border-color: transparent grey transparent transparent;
+}
+
 /* CALCULATOR */
 
 .calculator {
