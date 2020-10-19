@@ -29,6 +29,11 @@ function drawMatrix(matrix, offset) {
 
 function playerDrop() {
     player.pos.y++;
+    if (collide(arena, player)) {
+      player.pos.y--;
+      merge(arena, player)
+      player.pos.y = 0
+    }
     dropCounter = 0 ;
 }
 
@@ -50,7 +55,7 @@ function collide(arena, player) {
 function createMatrix(w, h) {
   const matrix = [];
   while (h--) {
-    atrix.push(new Array(w).fill(0))
+    matrix.push(new Array(w).fill(0))
   }
   return matrix;
 }
@@ -72,8 +77,7 @@ function update(time = 0) {
 
   dropCounter += deltaTime;
   if (dropCounter > dropInterval) {
-    player.pos.y++
-    dropCounter = 0
+    playerDrop()
   }
 
   draw()
@@ -97,5 +101,4 @@ document.addEventListener('keydown', event => {
   }
 }) 
 
-update();
-createMatrix(20, 5)
+update()
