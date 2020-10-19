@@ -141,6 +141,7 @@ function checkTimelineCardStates() {
   window.addEventListener("scroll", callbackFunc);
 }
 
+checkTimelineCardStates();
 
 // CALCULATOR
 function sum () {
