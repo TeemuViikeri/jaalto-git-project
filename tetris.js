@@ -43,6 +43,16 @@ function createMatrix(w, h) {
   return matrix;
 }
 
+function merge(arena, player) {
+  player.matrix.forEach((row, y) => {
+    row.forEach((value, x) => {
+      if (value !== 0) {
+        arena[y + player.pos.y][x + player.pos.x] = value
+      }
+    })
+  })
+}
+
 let lastTime = 0;
 function update(time = 0) {
   const deltaTime = time - lastTime
