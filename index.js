@@ -91,6 +91,43 @@ function getWeekday(date) {
 
 setInterval(showTime, 1000)
 
+
+function checkTimelineCardStates() {
+  var items = document.querySelectorAll(".timeline li");
+
+  // Returns true if list item set as function's parameter is in view 
+  function isElementInViewport(el) {
+    // Get list item's size and position
+    var rect = el.getBoundingClientRect();
+    // Return if ...
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Add class "in-view" to list item when callbackFunc is called
+  // Function will iterate over list items again and again passing them to isElementInViewPort(el)
+  // Check main.css styling file to check what values "in-view" class element get   
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // Check if elements are in view after page has been loaded
+  window.addEventListener("load", callbackFunc); 
+  // Check if elements are in view after page has been resized
+  window.addEventListener("resize", callbackFunc);
+  // Check if elements are in view after page has been scrolled
+  window.addEventListener("scroll", callbackFunc);
+}
+
+
 function getQuotes () {
   const quotes = [
     {
