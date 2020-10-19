@@ -58,6 +58,8 @@ function update(time = 0) {
   requestAnimationFrame(update)
 }
 
+const arena = createMatrix(12, 20)
+
 const player = {
   pos: {x:5, y:5},
   matrix: matrix,
