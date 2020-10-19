@@ -1,38 +1,4 @@
-function sum () {
-  var number = document.getElementById("number").value
-  var number2 = document.getElementById("number2").value
-  document.getElementById("result").innerHTML = "result: " + (Number(number) + Number(number2))
-}
-
-function minus () {
-  var number = document.getElementById("number").value
-  var number2 = document.getElementById("number2").value
-  document.getElementById("result").innerHTML = "result: " + (Number(number) - Number(number2))
-}
-
-function multiply () {
-  var number = document.getElementById("number").value
-  var number2 = document.getElementById("number2").value
-  document.getElementById("result").innerHTML = "result: " + (Number(number) * Number(number2))
-}
-
-function divide () {
-  var number = document.getElementById("number").value
-  var number2 = document.getElementById("number2").value
-  document.getElementById("result").innerHTML = "result: " + (Number(number) / Number(number2))
-}
-
-function power () {
-  var number = document.getElementById("number").value
-  var number2 = document.getElementById("number2").value
-  document.getElementById("result").innerHTML = "result: " + (Math.pow(number, number2))
-}
-
-function squareRoot () {
-  var number = document.getElementById("number").value
-  document.getElementById("result").innerHTML = "result: " + (Math.sqrt(number))
-}
-
+// CLOCK
 function showTime() {
   var clock = document.getElementById('clock');
 
@@ -91,6 +57,8 @@ function getWeekday(date) {
 
 setInterval(showTime, 1000)
 
+
+// QUOTES
 function getQuotes () {
   const quotes = [
     {
@@ -135,3 +103,78 @@ function getQuotes () {
 }
 
 getQuotes();
+
+
+// TIMELINE
+function checkTimelineCardStates() {
+  var items = document.querySelectorAll(".timeline li");
+
+  // Returns true if list item set as function's parameter is in view 
+  function isElementInViewport(el) {
+    // Get list item's size and position
+    var rect = el.getBoundingClientRect();
+    // Return if ...
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Add class "in-view" to list item when callbackFunc is called
+  // Function will iterate over list items again and again passing them to isElementInViewPort(el)
+  // Check main.css styling file to check what values "in-view" class element get   
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // Check if elements are in view after page has been loaded
+  window.addEventListener("load", callbackFunc); 
+  // Check if elements are in view after page has been resized
+  window.addEventListener("resize", callbackFunc);
+  // Check if elements are in view after page has been scrolled
+  window.addEventListener("scroll", callbackFunc);
+}
+
+checkTimelineCardStates();
+
+// CALCULATOR
+function sum () {
+  var number = document.getElementById("number").value
+  var number2 = document.getElementById("number2").value
+  document.getElementById("result").innerHTML = "result: " + (Number(number) + Number(number2))
+}
+
+function minus () {
+  var number = document.getElementById("number").value
+  var number2 = document.getElementById("number2").value
+  document.getElementById("result").innerHTML = "result: " + (Number(number) - Number(number2))
+}
+
+function multiply () {
+  var number = document.getElementById("number").value
+  var number2 = document.getElementById("number2").value
+  document.getElementById("result").innerHTML = "result: " + (Number(number) * Number(number2))
+}
+
+function divide () {
+  var number = document.getElementById("number").value
+  var number2 = document.getElementById("number2").value
+  document.getElementById("result").innerHTML = "result: " + (Number(number) / Number(number2))
+}
+
+function power () {
+  var number = document.getElementById("number").value
+  var number2 = document.getElementById("number2").value
+  document.getElementById("result").innerHTML = "result: " + (Math.pow(number, number2))
+}
+
+function squareRoot () {
+  var number = document.getElementById("number").value
+  document.getElementById("result").innerHTML = "result: " + (Math.sqrt(number))
+}
