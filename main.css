@@ -86,7 +86,14 @@
 }
 
 /* Listing */
-
+.listing-section {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(255, 255 , 255, 0.2);
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem;
+}
 
 /* Timeline */
 .timeline {
