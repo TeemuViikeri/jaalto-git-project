@@ -41,7 +41,7 @@ function playerDrop() {
 function playerMove(dir) {
   player.pos.x += dir
   if (collide(arena, player)) {
-    player.pox.x -= dir
+    player.pos.x -= dir
   } 
 }
 
