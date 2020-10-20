@@ -4,6 +4,7 @@
     <title>Git project</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
 
@@ -28,6 +29,32 @@
                     -- AUTHOR
                 </h4>
             </div>
+        </section>
+
+        <!-- Listing -->
+        <section class="listing-section">
+            <form class="list-form">
+                <p class="alert"></p>
+                <h3>Teemu's List</h3>
+                <div class="form-control">
+                    <input type="text" id="grocery" placeholder="e.g. JS project">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+
+            <div class="item-container">
+                <div class="item-list">
+                    <article class="item">
+                      <p class="title">item</p>
+                      <div class="btn-container">
+                          <button type="button" class="edit-btn"><i class="fas fa-edit"></i></button>
+                          <button type="button" class="delete-btn"><i class="fas fa-trash"></i></button>
+                      </div>  
+                    </article>
+                </div>
+                <button type="button" class="clear-btn">Clear items</button>
+            </div>
+
         </section>
 
         <!-- Timeline -->
