@@ -45,6 +45,10 @@ function playerMove(dir) {
   } 
 }
 
+function playerRotate(dir) {
+  rotate(player.matrix, dir)
+}
+
 function rotate(matrix, dir) {
   for (let y = 0; y < matrix.length; ++y) {
     for (let x = 0; x < y; ++x) {
@@ -62,7 +66,7 @@ function rotate(matrix, dir) {
     matrix.forEach(row => row.reverse())
   } else {
     matrix.reverse()
-  }
+  } 
 }
 
 let dropCounter = 0;
