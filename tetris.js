@@ -103,7 +103,12 @@ function createPiece(type) {
         [1, 1, 1],
         [0, 1, 0],
       ]
-  } 
+  } else if (type === 'O') {
+    return [
+      [1, 1],
+      [1, 1],
+    ]
+  }
 }
 
 function merge(arena, player) {
