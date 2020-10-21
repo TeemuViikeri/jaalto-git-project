@@ -115,6 +115,21 @@
   justify-content: center;
 }
 
+#grocery {
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background: #444;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-color: transparent;
+  color: white;
+}
+
+#grocery::placeholder {
+  font-family: "Open Sans", sans-serif;
+  color: lightgray;
+}
+
 /* Timeline */
 .timeline {
   width: 60%;
