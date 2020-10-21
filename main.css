@@ -131,6 +131,7 @@
   border-bottom-left-radius: 0.5rem;
   border-color: transparent;
   color: white;
+  width: 100%;
 }
 
 #grocery::placeholder {
@@ -160,13 +161,26 @@
 }
 
 .item-container {
-  margin-top: 1rem;
+  width: 90%;
+  margin: 1.5rem auto 0;
   transition: all 0.3s linear;
   /* visibility: hidden; */
 }
 
 .show-container {
   visibility: visible;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding: 0.25rem 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s linear;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
 }
 
 /* Timeline */
