@@ -3,13 +3,6 @@ const context = canvas.getContext('2d')
 
 context.scale(20, 20)
 
-
-const matrix = [
-  [0, 0, 0],
-  [1, 1, 1],
-  [0, 1, 0],
-]
-
 function draw() {
   context.fillStyle = '#000'
   context.fillRect(0, 0, canvas.width, canvas.height)
@@ -103,6 +96,16 @@ function createMatrix(w, h) {
   return matrix;
 }
 
+function createPiece(type) {
+  if (type === 'T') {
+    return [
+        [0, 0, 0],
+        [1, 1, 1],
+        [0, 1, 0],
+      ]
+  } 
+}
+
 function merge(arena, player) {
   player.matrix.forEach((row, y) => {
     row.forEach((value, x) => {
@@ -131,7 +134,7 @@ const arena = createMatrix(12, 20)
 
 const player = {
   pos: {x:5, y:5},
-  matrix: matrix,
+  matrix: createPiece('T'),
 }
 
 document.addEventListener('keydown', event => {
