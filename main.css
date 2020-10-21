@@ -165,6 +165,10 @@
   /* visibility: hidden; */
 }
 
+.show-container {
+  visibility: visible;
+}
+
 /* Timeline */
 .timeline {
   width: 60%;
