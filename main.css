@@ -159,6 +159,12 @@
   background: #888;
 }
 
+.item-container {
+  margin-top: 1rem;
+  transition: all 0.3s linear;
+  /* visibility: hidden; */
+}
+
 /* Timeline */
 .timeline {
   width: 60%;
