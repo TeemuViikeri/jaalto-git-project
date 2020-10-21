@@ -110,6 +110,11 @@
   text-align: center;
 }
 
+.form-control {
+  display: flex;
+  justify-content: center;
+}
+
 /* Timeline */
 .timeline {
   width: 60%;
