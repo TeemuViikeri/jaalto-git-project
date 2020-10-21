@@ -130,6 +130,23 @@
   color: lightgray;
 }
 
+.submit-btn {
+  background: #666666;
+  border-color: transparent;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.25rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  align-items: center;
+  display: grid;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
 /* Timeline */
 .timeline {
   width: 60%;
