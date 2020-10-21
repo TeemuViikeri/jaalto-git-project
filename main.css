@@ -139,7 +139,7 @@
 }
 
 .submit-btn {
-  background: #666666;
+  background: #666;
   border-color: transparent;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -153,6 +153,10 @@
   display: grid;
   align-items: center;
   transition: all 0.3s linear;
+}
+
+.submit-btn:hover {
+  background: #888;
 }
 
 /* Timeline */
