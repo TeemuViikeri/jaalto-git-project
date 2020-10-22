@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 /* MAIN HEADING */
 
 .main-header {
@@ -166,6 +162,11 @@ body {
   background: #888;
 }
 
+.submit-btn:active {
+  position: relative;
+  top: 1px;
+}
+
 .item-container {
   width: 90%;
   margin: 1.5rem auto 0;
@@ -206,13 +207,20 @@ body {
   color: white;
 }
 
-.edit-btn, .delete-btn {
+.edit-btn,
+.delete-btn {
   background: transparent;
   border-color: transparent;
   cursor: pointer;
   font-size: 0.8rem;
   margin: 0 0.2rem;
-  transition: var(--transition);
+  transition: all 0.3s linear;
+}
+
+.edit-btn:active,
+.delete-btn:active {
+  position: relative;
+  top: 1px;
 }
 
 .edit-btn {
@@ -229,6 +237,31 @@ body {
 
 .delete-btn:hover {
   color: white;
+}
+
+.clear-btn {
+  width: 10rem;
+  height: 1.5rem;
+  background: #666;
+  border-color: transparent;
+  border-radius: 8px;
+  display: grid;
+  align-items: center;
+  letter-spacing: 0.15rem;
+  font-size: 0.85rem;
+  color: white;
+  transition: all 0.3s linear;
+  margin: 1.25rem auto 0;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: #888;
+}
+
+.clear-btn:active {
+  position: relative;
+  top: 1px;
 }
 
 /* Timeline */
