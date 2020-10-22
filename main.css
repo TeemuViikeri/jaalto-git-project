@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* MAIN HEADING */
 
 .main-header {
@@ -98,7 +102,8 @@
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
-  width: 60%;
+  width: 90vw;
+  max-width: 35rem;
   margin: 0 auto;
   padding: 3rem;
   transition: all 0.3s linear;
@@ -131,7 +136,7 @@
   border-bottom-left-radius: 0.5rem;
   border-color: transparent;
   color: white;
-  width: 100%;
+  width: 80%;
 }
 
 #grocery::placeholder {
@@ -154,6 +159,7 @@
   display: grid;
   align-items: center;
   transition: all 0.3s linear;
+  width: 20%;
 }
 
 .submit-btn:hover {
