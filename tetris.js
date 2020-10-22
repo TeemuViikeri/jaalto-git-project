@@ -127,6 +127,12 @@ function createPiece(type) {
         [0, 1, 0, 0],
         [0, 1, 0, 0],
       ]
+  }  else if (type === 'S') {
+    return [
+        [0, 1, 0],
+        [0, 1, 0],
+        [1, 1, 0],
+      ]
   }
 }
 
