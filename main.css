@@ -187,6 +187,17 @@ body {
   transition: all 0.3s linear;
   border-radius: 0.5rem;
   text-transform: capitalize;
+  font-weight: 700;
+}
+
+.list-item:hover {
+  color: white; /* hsl(210, 22%, 49%); */
+  background: #444; /* hsl(210, 36%, 96%); */
+}
+
+.title {
+  letter-spacing: 2px;
+  transition: all 0.3s linear;
 }
 
 /* Timeline */
