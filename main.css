@@ -191,13 +191,44 @@ body {
 }
 
 .list-item:hover {
-  color: white; /* hsl(210, 22%, 49%); */
-  background: #444; /* hsl(210, 36%, 96%); */
+  color: white;
+  background: #444;
 }
 
 .title {
   letter-spacing: 2px;
   transition: all 0.3s linear;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.edit-btn, .delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin: 0 0.2rem;
+  transition: var(--transition);
+}
+
+.edit-btn {
+  color: black;
+}
+
+.edit-btn:hover {
+  color: white;
+}
+
+.delete-btn {
+  color: black;
+}
+
+.delete-btn:hover {
+  color: white;
 }
 
 /* Timeline */
