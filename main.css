@@ -124,7 +124,7 @@
   justify-content: center;
 }
 
-#grocery {
+#listing-input {
   padding: 0.25rem;
   padding-left: 1rem;
   background: #444;
@@ -135,7 +135,7 @@
   width: 80%;
 }
 
-#grocery::placeholder {
+#listing-input::placeholder {
   font-family: "Open Sans", sans-serif;
   color: lightgray;
 }
