@@ -177,6 +177,17 @@ function update(time = 0) {
   requestAnimationFrame(update)
 }
 
+const colors = [
+  null,
+  'red',
+  'blue',
+  'violet',
+  'green',
+  'purple',
+  'orange',
+  'pink',
+]
+
 const arena = createMatrix(12, 20)
 
 const player = {
