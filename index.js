@@ -126,11 +126,10 @@ function addItem(event) {
   // This id value will be later used to set the time
   const id = new Date().getTime().toString();
   if (value && !editFlag) {
-
   } else if (value && editFlag) {
-
   } else {
-
+    alert.textContent = "empty value";
+    alert.classList.add("alert-danger");
   }
 }
 
