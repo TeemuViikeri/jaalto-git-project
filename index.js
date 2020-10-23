@@ -138,7 +138,7 @@ function displayAlert(text, action) {
   setTimeout(() => {
     alert.textContent = "";
     alert.classList.remove(`alert-${action}`);
-  }, 1000);
+  }, 3000);
 }
 
 // TIMELINE
