@@ -104,17 +104,35 @@ function getQuotes() {
 getQuotes();
 
 // LISTING
-const alert = document.querySelector('.alert');
-const form = document.querySelector('.list-form');
-const inputList = document.getElementById('listing-input');
-const submitBtn = document.querySelector('.submit-btn');
-const container = document.querySelector('.item-container');
-const list = document.querySelector('.item-listing');
-const clearBtn = document.querySelector('.clear-btn');
+const alert = document.querySelector(".alert");
+const form = document.querySelector(".list-form");
+const inputList = document.getElementById("listing-input");
+const submitBtn = document.querySelector(".submit-btn");
+const container = document.querySelector(".item-container");
+const list = document.querySelector(".item-listing");
+const clearBtn = document.querySelector(".clear-btn");
 
 let editElement;
 let editFlag = false;
 let editID = "";
+
+form.addEventListener("submit", addItem);
+
+function addItem(event) {
+  // Prevents submit event's default action, form submitting
+  event.preventDefault();
+  // When submit button is clicked, take value of input field and save it to a variable
+  const value = inputList.value;
+  // This id value will be later used to set the time
+  const id = new Date().getTime().toString();
+  if (value && !editFlag) {
+
+  } else if (value && editFlag) {
+
+  } else {
+
+  }
+}
 
 // TIMELINE
 function checkTimelineCardStates() {
