@@ -3,35 +3,117 @@
 <head>
     <title>Git project</title>
 	<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="main-header">
+    <header class="main-header">
         <h1>Git Project – Sandbox</h1>
-    </div>
-
+        <div id="clock">Clock</div>
+    </header>
+    
     <div class="teemu-area">
-        <h2>Teemu's Dev Area</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget ornare magna. Vivamus nec massa vel velit egestas mollis a ut metus. Nunc vitae purus in enim hendrerit mollis imperdiet at risus. Nullam risus ante, tristique at condimentum id, placerat sit amet velit. Sed laoreet neque ex, ac ultricies tellus hendrerit in. Nam mollis elit nec nisi viverra volutpat. Nulla id urna quam. Maecenas congue dapibus mauris, a blandit leo accumsan et. Nunc id sapien in elit suscipit pharetra. Pellentesque sit amet lectus vitae velit cursus sollicitudin. Proin venenatis viverra blandit. Suspendisse mollis fermentum tellus at lobortis. Sed vestibulum accumsan eros, eget volutpat enim tempor at. Cras nibh arcu, maximus eu orci non, congue pulvinar urna. Duis rhoncus egestas lacus eget convallis.</p>
+        <!-- Quotes -->
+        <section class="quotes">
+            <h2>Teemu's Dev Area</h2>
+            <div class="quote-container">
+                <h2 class="quote-heading">Quote Generator</h2>
+                <button class="quote-btn" id="btn">Generate Quote</button>
+                <h3 class="quote-text">
+                    <span id="quote">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ipsum aspernatur blanditiis maiores. 
+                    </span>
+                </h3>
+                <h4 class="quote-author">
+                    -- AUTHOR
+                </h4>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="timeline">
+            <div class="timeline-h-container">
+                <h2>Timeline</h2>
+            </div>
+            <div class="timeline-container">
+                <ul>
+                    <li>
+                        <div>
+                            <time>2000</time> Nunc non rutrum odio. Phasellus accumsan et eros sit amet venenatis. Ut accumsan, mauris ac consequat euismod, nulla mi egestas elit, eu hendrerit orci ante ut justo. Fusce consequat lacus.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2010</time> Donec volutpat ultricies venenatis. Quisque leo massa, commodo tincidunt magna ut, pretium pretium enim. Duis ac dignissim arcu, vel posuere libero. Maecenas sed cursus massa, non consectetur velit. Suspendisse vulputate.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2020</time> Suspendisse vel consequat sapien. Etiam ut fermentum purus. Morbi ac dapibus ante. Nam eget lacinia ligula. Nullam egestas, nisl eget blandit efficitur, ligula orci aliquet diam, nec placerat enim velit.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2030</time> Cras tincidunt orci varius semper lobortis. Cras sit amet sem porta, sollicitudin neque et, vestibulum erat. In in mauris et elit vestibulum lobortis. Cras metus diam, congue ut felis et.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2040</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2050</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2060</time> Donec volutpat ultricies venenatis. Quisque leo massa, commodo tincidunt magna ut, pretium pretium enim. Duis ac dignissim arcu, vel posuere libero. Maecenas sed cursus massa, non consectetur velit. Suspendisse vulputate.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2070</time> Suspendisse vel consequat sapien. Etiam ut fermentum purus. Morbi ac dapibus ante. Nam eget lacinia ligula. Nullam egestas, nisl eget blandit efficitur, ligula orci aliquet diam, nec placerat enim velit.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2080</time> Cras tincidunt orci varius semper lobortis. Cras sit amet sem porta, sollicitudin neque et, vestibulum erat. In in mauris et elit vestibulum lobortis. Cras metus diam, congue ut felis et.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2090</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2100</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 
     <div class="calculator">
+        <h2>Calculator</h2>
         <div id="calculatorInputs">
-          <input type="number" id="number" placeholder="number">
-          <input type="number" id="number2" placeholder="number">
+          <input class="calc-input" type="number" id="number" placeholder="number">
+          <input class="calc-input" type="number" id="number2" placeholder="number">
         </div>
         <div id="calculatorButtons">
-          <button type="button" id="sum" onclick="sum()">+</button>
-          <button type="button" id="minus" onclick="minus()">-</button>
-          <button type="button" id="multiply" onclick="multiply()">*</button>
-          <button type="button" id="divide" onclick="divide()">/</button>
-          <button type="button" id="power" onclick="power()">^</button>
-          <button type="button" id="squareRoot" onclick="squareRoot()">&Sqrt;</button>
+          <button class="calc-btn" type="button" id="sum" onclick="sum()">+</button>
+          <button class="calc-btn" type="button" id="minus" onclick="minus()">-</button>
+          <button class="calc-btn" type="button" id="multiply" onclick="multiply()">*</button>
+          <button class="calc-btn" type="button" id="divide" onclick="divide()">/</button>
+          <button class="calc-btn" type="button" id="power" onclick="power()">^</button>
+          <button class="calc-btn" type="button" id="squareRoot" onclick="squareRoot()">&Sqrt;</button>
         </div> 
         <p id="result"></p>
     </div>
-    
+  
     <canvas id="tetris" width="240" height="400"></canvas>
     <div id="score"></div>
 </body>
