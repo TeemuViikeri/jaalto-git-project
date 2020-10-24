@@ -205,8 +205,8 @@ const colors = [
 const arena = createMatrix(12, 20)
 
 const player = {
-  pos: {x:5, y:5},
-  matrix: createPiece('T'),
+  pos: {x:0, y:0},
+  matrix: null,
   score: 0,
 }
 
@@ -224,4 +224,5 @@ document.addEventListener('keydown', event => {
   }
 })
 
+playerReset()
 update()
