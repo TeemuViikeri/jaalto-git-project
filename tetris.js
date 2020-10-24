@@ -191,6 +191,10 @@ function update(time = 0) {
   requestAnimationFrame(update)
 }
 
+function updateScore() {
+  document.getElementById("score").innerText = player.score
+}
+
 const colors = [
   null,
   'red',
