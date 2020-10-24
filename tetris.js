@@ -207,6 +207,7 @@ const arena = createMatrix(12, 20)
 const player = {
   pos: {x:5, y:5},
   matrix: createPiece('T'),
+  score: 0,
 }
 
 document.addEventListener('keydown', event => {
