@@ -65,6 +65,8 @@ function playerReset() {
 
   if (collide(arena, player)) {
     arena.forEach(row => row.fill(0))
+    player.score = 0
+    updateScore()
   }
 }
 
@@ -234,4 +236,5 @@ document.addEventListener('keydown', event => {
 })
 
 playerReset()
+updateScore()
 update()
