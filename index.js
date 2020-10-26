@@ -140,6 +140,9 @@ function addItem(event) {
     list.appendChild(element);
     displayAlert("item added to the list", "success");
     container.classList.add("show-container");
+
+    addToLocalStorage(id, value);
+    setBackToDefault();
   } else if (value && editFlag) {
   } else {
     displayAlert("please enter value", "danger");
@@ -153,6 +156,17 @@ function displayAlert(text, action) {
     alert.textContent = "";
     alert.classList.remove(`alert-${action}`);
   }, 3000);
+}
+
+function setBackToDefault() {
+  inputList.value = "";
+  editFlag = false;
+  editID = "";
+  submitBtn.textContent = "submit";
+}
+
+function addToLocalStorage(id, value) {
+  console.log("added to local storage");
 }
 
 // TIMELINE
