@@ -264,3 +264,9 @@ canvas {
   font-size: x-large;
   font-weight: bold;
 }
+
+#tetrisgame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
