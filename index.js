@@ -128,6 +128,7 @@ function addItem(event) {
   if (value && !editFlag) {
     const element = document.createElement("article");
     element.classList.add("list-item");
+    // data-* attributes are used to store extra information via attributes which scripts can target
     const attr = document.createAttribute("data-id");
     attr.value = id;
     element.setAttributeNode(attr);
@@ -138,7 +139,7 @@ function addItem(event) {
      </div>`;
     list.appendChild(element);
     displayAlert("item added to the list", "success");
-    container.classList.add("show-container")
+    container.classList.add("show-container");
   } else if (value && editFlag) {
   } else {
     displayAlert("please enter value", "danger");
