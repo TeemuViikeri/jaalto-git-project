@@ -178,8 +178,9 @@ function clearItems() {
   // localStorage.removeItem("list");
 }
 
-function deleteItem() {
-  console.log("Item deleted");
+function deleteItem(e) {
+  const element = e.currentTarget.parentElement.parentElement;
+  list.removeChild(element);
 }
 
 function editItem() {
