@@ -259,3 +259,8 @@ time {
 canvas {
   border: solid .4em blue;
 }
+
+#score {
+  font-size: x-large;
+  font-weight: bold;
+}
