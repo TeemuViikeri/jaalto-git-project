@@ -123,9 +123,22 @@ function addItem(event) {
   event.preventDefault();
   // When submit button is clicked, take value of input field and save it to a variable
   const value = inputList.value;
-  // This id value will be later used to set the time
+  // This id value will be later used as an attribute id value
   const id = new Date().getTime().toString();
   if (value && !editFlag) {
+    const element = document.createElement("article");
+    element.classList.add("list-item");
+    const attr = document.createAttribute("data-id");
+    attr.value = id;
+    element.setAttributeNode(attr);
+    element.innerHTML = `<p class="title">${value}</p>
+     <div class="btn-container">
+        <button type="button" class="edit-btn"><i class="fas fa-edit"></i></button>
+        <button type="button" class="delete-btn"><i class="fas fa-trash"></i></button>
+     </div>`;
+    list.appendChild(element);
+    displayAlert("item added to the list", "success");
+    container.classList.add("show-container")
   } else if (value && editFlag) {
   } else {
     displayAlert("please enter value", "danger");
