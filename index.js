@@ -117,6 +117,7 @@ let editFlag = false;
 let editID = "";
 
 form.addEventListener("submit", addItem);
+clearBtn.addEventListener("click", clearItems);
 
 function addItem(event) {
   // Prevents submit event's default action, form submitting
@@ -156,6 +157,21 @@ function displayAlert(text, action) {
     alert.textContent = "";
     alert.classList.remove(`alert-${action}`);
   }, 3000);
+}
+
+function clearItems() {
+  const items = document.querySelectorAll(".grocery-item");
+
+  if (items.length > 0) {
+    items.forEach((item) => {
+      list.removeChild(item);
+    });
+  }
+
+  container.classList.remove("show-container");
+  displayAlert("list emptied", "success");
+  setBackToDefault();
+  // localStorage.removeItem("list");
 }
 
 function setBackToDefault() {
