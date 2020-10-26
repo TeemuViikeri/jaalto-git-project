@@ -181,6 +181,14 @@ function clearItems() {
 function deleteItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
   list.removeChild(element);
+
+  if (list.children.length === 0) {
+    container.classList.remove("show-container");
+  }
+
+  displayAlert("Item removed", "success");
+  setBackToDefault();
+  // removeFromLocalStorage(id);
 }
 
 function editItem() {
@@ -196,6 +204,10 @@ function setBackToDefault() {
 
 function addToLocalStorage(id, value) {
   console.log("added to local storage");
+}
+
+function removeFromLocalStorage(id) {
+  console.log("Removed from local storage.");
 }
 
 // TIMELINE
