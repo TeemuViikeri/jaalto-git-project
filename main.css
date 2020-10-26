@@ -263,6 +263,7 @@ canvas {
 #score {
   font-size: x-large;
   font-weight: bold;
+  padding-left: 1em;
 }
 
 #tetrisgame {
