@@ -164,7 +164,7 @@ function displayAlert(text, action) {
   setTimeout(() => {
     alert.textContent = "";
     alert.classList.remove(`alert-${action}`);
-  }, 3000);
+  }, 1000);
 }
 
 function clearItems() {

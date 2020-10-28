@@ -174,6 +174,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 2px;
+  text-transform: capitalize;
   cursor: pointer;
   align-items: center;
   display: grid;
@@ -194,7 +195,6 @@
 .item-container {
   width: 90%;
   margin: 1.5rem auto 0;
-  transition: all 0.3s linear;
   visibility: hidden;
 }
 
