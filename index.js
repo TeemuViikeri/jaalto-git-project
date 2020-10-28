@@ -215,9 +215,7 @@ function setBackToDefault() {
 
 function addToLocalStorage(id, value) {
   const item = { id, value };
-  let localStorageItems = localStorage.getItem("list")
-    ? JSON.parse(localStorage.getItem("list"))
-    : [];
+  let localStorageItems = getLocalStorage();
 
   localStorageItems.push(item);
   localStorage.setItem("list"), JSON.stringify(localStorageItems);
