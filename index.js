@@ -218,7 +218,7 @@ function addToLocalStorage(id, value) {
   let localStorageItems = getLocalStorage();
 
   localStorageItems.push(item);
-  localStorage.setItem("list"), JSON.stringify(localStorageItems);
+  localStorage.setItem("list", JSON.stringify(localStorageItems));
 }
 
 function removeFromLocalStorage(id) {}
