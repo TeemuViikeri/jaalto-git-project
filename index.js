@@ -214,7 +214,13 @@ function setBackToDefault() {
 }
 
 function addToLocalStorage(id, value) {
-  console.log("added to local storage");
+  const item = { id, value };
+  let localStorageItems = localStorage.getItem("list")
+    ? JSON.parse(localStorage.getItem("list"))
+    : [];
+
+  localStorageItems.push(item);
+  localStorage.setItem("list"), JSON.stringify(localStorageItems);
 }
 
 function removeFromLocalStorage(id) {
