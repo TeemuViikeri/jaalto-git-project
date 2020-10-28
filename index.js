@@ -223,12 +223,16 @@ function addToLocalStorage(id, value) {
   localStorage.setItem("list"), JSON.stringify(localStorageItems);
 }
 
-function removeFromLocalStorage(id) {
-  console.log("Removed from local storage.");
-}
+function removeFromLocalStorage(id) {}
 
 function editLocalStorage(id, value) {
   console.log("Edited in local storage");
+}
+
+function getLocalStorage() {
+  return localStorage.getItem("list")
+    ? JSON.parse(localStorage.getItem("list"))
+    : [];
 }
 
 // TIMELINE
