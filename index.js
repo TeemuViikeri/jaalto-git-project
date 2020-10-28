@@ -149,6 +149,10 @@ function addItem(event) {
     addToLocalStorage(id, value);
     setBackToDefault();
   } else if (value && editFlag) {
+    editElement.innerHTML = value;
+    displayAlert("value changed", "success");
+    editLocalStorage(editID, value);
+    setBackToDefault();
   } else {
     displayAlert("please enter value", "danger");
   }
@@ -181,7 +185,7 @@ function clearItems() {
 function deleteItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
   const id = element.dataset.id;
-  
+
   list.removeChild(element);
 
   if (list.children.length === 0) {
@@ -193,8 +197,13 @@ function deleteItem(e) {
   // removeFromLocalStorage(id);
 }
 
-function editItem() {
-  console.log("Edit item");
+function editItem(e) {
+  const element = e.currentTarget.parentElement.parentElement;
+  editElement = e.currentTarget.parentElement.previousElementSibling;
+  inputList.value = editElement.innerHTML;
+  editFlag = true;
+  editID = element.dataset.id;
+  submitBtn.textContent = "edit";
 }
 
 function setBackToDefault() {
@@ -210,6 +219,10 @@ function addToLocalStorage(id, value) {
 
 function removeFromLocalStorage(id) {
   console.log("Removed from local storage.");
+}
+
+function editLocalStorage(id, value) {
+  console.log("Edited in local storage");
 }
 
 // TIMELINE
