@@ -194,7 +194,7 @@ function deleteItem(e) {
 
   displayAlert("Item removed", "success");
   setBackToDefault();
-  // removeFromLocalStorage(id);
+  removeFromLocalStorage(id);
 }
 
 function editItem(e) {
@@ -221,7 +221,16 @@ function addToLocalStorage(id, value) {
   localStorage.setItem("list", JSON.stringify(localStorageItems));
 }
 
-function removeFromLocalStorage(id) {}
+function removeFromLocalStorage(id) {
+  let localStorageItems = getLocalStorage();
+  const itemToDelete = localStorageItems.filter((item) => {
+    if (item.id != id) {
+      return item;
+    }
+  });
+  
+  localStorage.setItem("list", JSON.stringify(itemToDelete));
+}
 
 function editLocalStorage(id, value) {
   console.log("Edited in local storage");
