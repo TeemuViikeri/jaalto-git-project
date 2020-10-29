@@ -235,7 +235,7 @@ function removeFromLocalStorage(id) {
 
 function editLocalStorage(id, value) {
   let localStorageItems = getLocalStorage();
-  localStorageItems = items.map((item) => {
+  localStorageItems = localStorageItems.map((item) => {
     if (item.id === id) {
       item.value = value;
     }
