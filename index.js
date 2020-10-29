@@ -223,13 +223,14 @@ function addToLocalStorage(id, value) {
 
 function removeFromLocalStorage(id) {
   let localStorageItems = getLocalStorage();
-  const itemToDelete = localStorageItems.filter((item) => {
+
+  localStorageItems = localStorageItems.filter((item) => {
     if (item.id != id) {
       return item;
     }
   });
-  
-  localStorage.setItem("list", JSON.stringify(itemToDelete));
+
+  localStorage.setItem("list", JSON.stringify(localStorageItems));
 }
 
 function editLocalStorage(id, value) {
