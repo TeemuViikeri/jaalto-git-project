@@ -164,6 +164,10 @@
   color: lightgray;
 }
 
+#listing-input::first-letter #listing-input::placeholder::first-letter {
+  text-transform: capitalize;
+}
+
 .submit-btn {
   background: #666;
   border-color: transparent;
