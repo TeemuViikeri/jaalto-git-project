@@ -271,3 +271,7 @@ canvas {
   justify-content: center;
   align-items: center;
 }
+
+#tetrisinstructions {
+  font-size: x-large;
+}
