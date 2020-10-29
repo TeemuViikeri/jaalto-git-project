@@ -168,7 +168,7 @@ function displayAlert(text, action) {
 }
 
 function clearItems() {
-  const items = document.querySelectorAll(".grocery-item");
+  const items = document.querySelectorAll(".list-item");
 
   if (items.length > 0) {
     items.forEach((item) => {
@@ -179,7 +179,7 @@ function clearItems() {
   container.classList.remove("show-container");
   displayAlert("list emptied", "success");
   setBackToDefault();
-  // localStorage.removeItem("list");
+  localStorage.removeItem("list");
 }
 
 function deleteItem(e) {
