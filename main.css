@@ -275,4 +275,5 @@ canvas {
 #tetrisinstructions {
   font-size: x-large;
   font-weight: bold;
+  padding-right: 1em;
 }
