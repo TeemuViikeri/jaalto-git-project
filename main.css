@@ -261,6 +261,7 @@ canvas {
 }
 
 #score {
+  color: white;
   font-size: x-large;
   font-weight: bold;
   padding-left: 1em;
