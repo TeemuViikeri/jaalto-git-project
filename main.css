@@ -473,3 +473,29 @@ time {
     left: -190px; 
   }
 }
+
+canvas {
+  border: solid .4em white;
+}
+
+#score {
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding-left: 1em;
+}
+
+#tetrisgame {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tetrisinstructions {
+  border: solid .1em white;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+  padding-right: 1em;
+}
