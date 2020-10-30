@@ -454,3 +454,23 @@ time {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
+
+@media only screen and (max-width: 1000px) {
+  .timeline ul li div {
+    width: 200px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -240px; 
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .timeline ul li div {
+    width: 150px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -190px; 
+  }
+}
