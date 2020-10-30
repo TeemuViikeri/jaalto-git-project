@@ -118,6 +118,7 @@ let editID = "";
 
 form.addEventListener("submit", addItem);
 clearBtn.addEventListener("click", clearItems);
+window.addEventListener("DOMContentLoaded", setupItems);
 
 function addItem(event) {
   // Prevents submit event's default action, form submitting
@@ -250,6 +251,13 @@ function getLocalStorage() {
   return localStorage.getItem("list")
     ? JSON.parse(localStorage.getItem("list"))
     : [];
+}
+
+function setupItems() {
+  let localStorageItems = getLocalStorage();
+
+  if (localStorageItems.length > 0) {
+  }
 }
 
 // TIMELINE
