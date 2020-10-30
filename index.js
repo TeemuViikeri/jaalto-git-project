@@ -128,10 +128,9 @@ function addItem(event) {
   // This id value will be later used as an attribute id value
   const id = new Date().getTime().toString();
   if (value && !editFlag) {
-    
+    createListItem(id, value);
     displayAlert("item added to the list", "success");
     container.classList.add("show-container");
-
     addToLocalStorage(id, value);
     setBackToDefault();
   } else if (value && editFlag) {
@@ -242,26 +241,31 @@ function setupItems() {
   let localStorageItems = getLocalStorage();
 
   if (localStorageItems.length > 0) {
+    localStorageItems.forEach((item) => {
+      createListItem(item.id, item.value);
+    });
+
+    container.classList.add("show-container");
   }
 }
 
 function createListItem(id, value) {
   const element = document.createElement("article");
-    element.classList.add("list-item");
-    // data-* attributes are used to store extra information via attributes which scripts can target
-    const attr = document.createAttribute("data-id");
-    attr.value = id;
-    element.setAttributeNode(attr);
-    element.innerHTML = `<p class="title">${value}</p>
+  element.classList.add("list-item");
+  // data-* attributes are used to store extra information via attributes which scripts can target
+  const attr = document.createAttribute("data-id");
+  attr.value = id;
+  element.setAttributeNode(attr);
+  element.innerHTML = `<p class="title">${value}</p>
      <div class="btn-container">
         <button type="button" class="edit-btn"><i class="fas fa-edit"></i></button>
         <button type="button" class="delete-btn"><i class="fas fa-trash"></i></button>
      </div>`;
-    const deleteBtn = element.querySelector(".delete-btn");
-    const editBtn = element.querySelector(".edit-btn");
-    deleteBtn.addEventListener("click", deleteItem);
-    editBtn.addEventListener("click", editItem);
-    list.appendChild(element);
+  const deleteBtn = element.querySelector(".delete-btn");
+  const editBtn = element.querySelector(".edit-btn");
+  deleteBtn.addEventListener("click", deleteItem);
+  editBtn.addEventListener("click", editItem);
+  list.appendChild(element);
 }
 
 // TIMELINE
