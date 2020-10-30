@@ -103,7 +103,6 @@
   margin: 0 auto;
   padding: 3rem;
   padding-top: 2rem;
-  transition: all 0.3s linear;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -183,7 +182,6 @@
   align-items: center;
   display: grid;
   align-items: center;
-  transition: all 0.3s linear;
   width: 20%;
 }
 
@@ -213,7 +211,6 @@
   color: black;
   padding: 0.25rem 1rem;
   margin-bottom: 1rem;
-  transition: all 0.3s linear;
   border-radius: 0.5rem;
   font-weight: 700;
 }
@@ -225,7 +222,6 @@
 
 .title {
   letter-spacing: 2px;
-  transition: all 0.3s linear;
 }
 
 .title::first-letter {
@@ -245,7 +241,6 @@
   cursor: pointer;
   font-size: 0.8rem;
   margin: 0 0.2rem;
-  transition: all 0.3s linear;
 }
 
 .edit-btn:active,
@@ -281,7 +276,6 @@
   letter-spacing: 0.15rem;
   font-size: 0.85rem;
   color: white;
-  transition: all 0.3s linear;
   margin: 1.25rem auto 0;
   cursor: pointer;
 }
@@ -383,10 +377,6 @@ time {
   border-color: transparent transparent transparent grey;
 }
 
-.timeline ul li::after {
-  transition: background-color 0.5s ease-in-out;
-}
-
 .timeline ul li.in-view::after {
   background-color: white;
 }
@@ -394,7 +384,6 @@ time {
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
