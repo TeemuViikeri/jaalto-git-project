@@ -1,9 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
     <title>Git project</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:wght@300,400&family=Roboto:wght@100;400,700&display=swap" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 <body>
+
+    <header class="main-header">
+        <h1>Git Project – Sandbox</h1>
+        <div id="clock">Clock</div>
+    </header>
+    
+    <div class="teemu-area">
+        <!-- Quotes -->
+        <section class="quotes">
+            <h2>Teemu's Dev Area</h2>
+            <div class="quote-container">
+                <h2 class="quote-heading">Quote Generator</h2>
+                <button class="quote-btn" id="btn">Generate Quote</button>
+                <h3 class="quote-text">
+                    <span id="quote">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ipsum aspernatur blanditiis maiores. 
+                    </span>
+                </h3>
+                <h4 class="quote-author">
+                    -- AUTHOR
+                </h4>
+            </div>
+        </section>
+
+        <!-- Listing -->
+        <h2 class="listing-heading">Listing</h2>
+        <section class="listing-section">
+            <form class="list-form">
+                <p class="alert"></p>
+                <h3>Teemu's List</h3>
+                <div class="form-control">
+                    <input type="text" id="listing-input" placeholder="e.g. JS project">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+
+            <div class="item-container">
+                <div class="item-listing"></div>
+                <button type="button" class="clear-btn">Clear items</button>
+            </div>
+
+        </section>
+
+        <!-- Timeline -->
+        <section class="timeline">
+            <div class="timeline-h-container">
+                <h2>Timeline</h2>
+            </div>
+            <div class="timeline-container">
+                <ul>
+                    <li>
+                        <div>
+                            <time>2000</time> Nunc non rutrum odio. Phasellus accumsan et eros sit amet venenatis. Ut accumsan, mauris ac consequat euismod, nulla mi egestas elit, eu hendrerit orci ante ut justo. Fusce consequat lacus.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2010</time> Donec volutpat ultricies venenatis. Quisque leo massa, commodo tincidunt magna ut, pretium pretium enim. Duis ac dignissim arcu, vel posuere libero. Maecenas sed cursus massa, non consectetur velit. Suspendisse vulputate.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2020</time> Suspendisse vel consequat sapien. Etiam ut fermentum purus. Morbi ac dapibus ante. Nam eget lacinia ligula. Nullam egestas, nisl eget blandit efficitur, ligula orci aliquet diam, nec placerat enim velit.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2030</time> Cras tincidunt orci varius semper lobortis. Cras sit amet sem porta, sollicitudin neque et, vestibulum erat. In in mauris et elit vestibulum lobortis. Cras metus diam, congue ut felis et.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2040</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2050</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2060</time> Donec volutpat ultricies venenatis. Quisque leo massa, commodo tincidunt magna ut, pretium pretium enim. Duis ac dignissim arcu, vel posuere libero. Maecenas sed cursus massa, non consectetur velit. Suspendisse vulputate.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2070</time> Suspendisse vel consequat sapien. Etiam ut fermentum purus. Morbi ac dapibus ante. Nam eget lacinia ligula. Nullam egestas, nisl eget blandit efficitur, ligula orci aliquet diam, nec placerat enim velit.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2080</time> Cras tincidunt orci varius semper lobortis. Cras sit amet sem porta, sollicitudin neque et, vestibulum erat. In in mauris et elit vestibulum lobortis. Cras metus diam, congue ut felis et.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2090</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>2100</time> Suspendisse erat justo, rhoncus convallis massa eu, lacinia imperdiet augue. Integer placerat fringilla erat nec consectetur. Proin nulla diam, semper vel maximus non, imperdiet ut quam. Sed pretium, neque vitae.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="calculator">
+        <h2>Calculator</h2>
+        <div id="calculatorInputs">
+          <input class="calc-input" type="number" id="number" placeholder="number">
+          <input class="calc-input" type="number" id="number2" placeholder="number">
+        </div>
+        <div id="calculatorButtons">
+          <button class="calc-btn" type="button" id="sum" onclick="sum()">+</button>
+          <button class="calc-btn" type="button" id="minus" onclick="minus()">-</button>
+          <button class="calc-btn" type="button" id="multiply" onclick="multiply()">*</button>
+          <button class="calc-btn" type="button" id="divide" onclick="divide()">/</button>
+          <button class="calc-btn" type="button" id="power" onclick="power()">^</button>
+          <button class="calc-btn" type="button" id="squareRoot" onclick="squareRoot()">&Sqrt;</button>
+        </div> 
+        <p id="result"></p>
+    </div>
+    <div id="tetrisgame">
+        <div id="tetrisinstructions">
+            <p>Rotate left: q</p>
+            <p>Rotate right: w</p>
+            <p>Moving: arrow keys</p>
+        </div>
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div id="score"></div>
+    </div>
 </body>
+<script src="index.js"></script>
+<script src="tetris.js"></script>
 </html>
