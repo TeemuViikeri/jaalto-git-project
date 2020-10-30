@@ -275,6 +275,7 @@ canvas {
 }
 
 #tetrisinstructions {
+  border: solid .1em white;
   color: white;
   font-size: x-large;
   font-weight: bold;
