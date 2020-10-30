@@ -185,7 +185,9 @@ function deleteItem(e) {
 function editItem(e) {
   const element = e.currentTarget.parentElement.parentElement;
   editElement = e.currentTarget.parentElement.previousElementSibling;
-  inputList.value = editElement.innerHTML;
+  let title = editElement.innerHTML;
+  title = title.charAt(0).toUpperCase() + title.slice(1);
+  inputList.value = title;
   editFlag = true;
   editID = element.dataset.id;
   submitBtn.textContent = "edit";
