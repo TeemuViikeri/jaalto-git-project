@@ -215,7 +215,6 @@
   margin-bottom: 1rem;
   transition: all 0.3s linear;
   border-radius: 0.5rem;
-  text-transform: capitalize;
   font-weight: 700;
 }
 
@@ -227,6 +226,10 @@
 .title {
   letter-spacing: 2px;
   transition: all 0.3s linear;
+}
+
+.title::first-letter {
+  text-transform: uppercase;
 }
 
 .btn-container {
